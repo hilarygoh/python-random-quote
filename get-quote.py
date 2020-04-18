@@ -3,12 +3,13 @@ import random
 def bigthing():
   #print("Keep it logically awesome.")
 
-  f = open("quotes.txt")
+  f = open("Fairbairnfilmquotes.txt")
   quotes = f.readlines()
   f.close()
 
-  last = 13
+  last = 12
   rnd = random.randint(0,last)
+  print(quotes[rnd])
   print(quotes[rnd])
 
 if __name__== "__main__":
